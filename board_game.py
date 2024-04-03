@@ -100,8 +100,9 @@ groups_to_check = [
 
 
 def is_game_over(board):
-    # We go through our groups
+    # check if there are more spaces to play
     if "." not in board:
+        # We go through our groups
         for group in groups_to_check:
             # If any of them are empty, they're clearly not a
             # winning row, so we skip them.
